@@ -3,8 +3,7 @@ package ClaseMath;
 public class Ejercicio4 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 		double numero1 = 1 + Math.random()*49;
 		double numero2 = 1 + Math.random()*49;
 		
