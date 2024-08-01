@@ -46,7 +46,7 @@ public class Variables {
 	char numeroChar = 1;
 	char letraChar = 'D';
 
-	
+
 	// DATOS ESTRUCTURADOS
 
 	// CADENAS DE CARACTERES
@@ -95,6 +95,29 @@ public class Variables {
 	// Forma 7
 	int matrizNumeros7[][] = new int[][] { { 6, 2 }, { 2, 7 } };
 
+
+	// TIPOS ESTRUCTURADOS DEFINIDOS POR EL USUARIO
+	
+	// Variable de tipo persona (Persona es una clase)
+	// Persona P;
+	// Variable de tipo animal (Animal es una clase)
+	// Animal A;
+	// Variable de Java de la clase Math
+	// Math M;
+	// Variable de Java de la clase Scanner
+	// Scanner S;
+	// Variable de Java de la clase BufferedReader
+	// BufferedReader B;
+	
+	
+	// CONSTANTES
+	
+	// Tendra la palabra clave final para ser definida. 
+	final int documento = 921474159;
+	final char letraA = 'A', letraB = 'B', letraC = 'C';
+	final String acronimo = "CC";
+
+
 	public void printVariables() {
 		System.out.println("byte: " + numeroByte);
 		System.out.println("short: " + numeroShort);
@@ -122,6 +145,12 @@ public class Variables {
         printMatrix("matrizNumeros5", matrizNumeros5);
         printMatrix("matrizNumeros6", matrizNumeros6);
         printMatrix("matrizNumeros7", matrizNumeros7);
+
+		System.out.println("documento: " + documento);
+		System.out.println("letraA: " + letraA);
+		System.out.println("letraB: " + letraB);
+		System.out.println("letraC: " + letraC);
+		System.out.println("acronimo: " + acronimo);
 	}
 		public static void printMatrix(String name, int[][] matrix) {
 			System.out.println("Matrix: " + name);
@@ -134,10 +163,380 @@ public class Variables {
 			System.out.println();
 		}
 
+
+// OPERADORES
+	
+	// Operador de asignación (=)
+
+	public static void assignmentOperator() {
+	
+		int numero1 = 8;
+		int numero2 = numero1;
+		
+		
+		System.out.println("La variable numero1 vale: " + numero1);
+		System.out.println("La variable numero2 vale: " + numero2);
+		
+		}
+		
+		
+		// Operadores aritméticos (+ - * / %)
+		
+		public static void arithmeticOperators() {
+		
+		long numero1 = 8;
+		int numero2 = 13;
+		long resta = numero1-numero2;
+		
+		System.out.println("El resultado es " + resta);
+		
+		
+		int numero3 = 3;
+		int numero4 = 52;
+		
+		int suma = numero3 + numero4;
+		
+		System.out.println("El resultado es " + suma);
+		
+		
+		double numero5 = 7.6;
+		int numero6 = 4;
+		double multiplicacion = numero5 * numero6;
+		
+		System.out.println("El resultado es " + multiplicacion);
+		
+		
+		
+		float numero7 = 2.3F;
+		int numero8 = 5;
+		float division = numero7/numero8;
+		
+		System.out.println("El resultado es " + division);
+		
+			
+		}
+		
+		
+		public static void basicArithmeticOperators() {
+			int numero1 = 12;
+			int numero2 = 2;
+			double division;
+			int suma, resta, multiplicacion;
+			double modulo;
+			double operacion;
+			
+			operacion = 9/3*5-3+8*2;
+			System.out.println("El resultado de la operación es: " + operacion);
+			
+			// División
+			division = numero1/numero2;
+			System.out.println("El resultado de la división es: " + division);
+			
+			// Suma
+			suma = numero1+numero2;
+			System.out.println("El resultado de la suma es: " + suma);
+			
+			// Resta
+			resta = numero1-numero2;
+			System.out.println("El resultado de la resta es: " + resta);
+		
+			// Multiplicación
+			multiplicacion = numero1*numero2;
+			System.out.println("El resultado de la multiplicación es: " + multiplicacion);
+			
+			// Módulo
+			modulo = numero1%numero2;
+			System.out.println("El resultado del módulo es: " + modulo);
+		}
+		
+		
+		// Operadores Aritmeticos Incrementales
+		
+		public static void unaryOperators () {
+			
+			// ++A Incrementa el valor y luego utiliza la variable
+			
+			int a = 5;
+			int b = ++a;
+			
+			System.out.println(a);
+			System.out.println(b);
+			
+			// A++ Utiliza la variable y luego incrementa el valor
+			
+			int c = 5;
+			int d = c++;
+			
+			System.out.println(c);
+			System.out.println(d);
+			
+			
+			// --A Decrementa el valor y luego utiliza la variable
+			
+			int e = 5;
+			int f = --e;
+			
+			System.out.println(e);
+			System.out.println(f);
+			
+			
+			// A-- Utiliza la variable y luego decrementa el valor
+			int g = 5;
+			int h = g--;
+			
+			System.out.println(g);
+			System.out.println(h);
+			
+		
+		}
+		
+		
+		
+		// Operadores Aritmeticos Combinados
+		
+		public static void compoundAssignmentOperators() {
+		
+			// += Suma combinada
+			
+			int a = 5;
+			int b = 2;
+			
+			b += a;
+			
+			System.out.println(b);
+			
+			
+			// -= Resta combinada
+			
+			int c = 5;
+			int d = 2;
+					
+			d -= c;
+			
+			System.out.println(d);
+			
+			
+			// *= Multipliación combinada
+			
+			int e = 5;
+			int f = 2;
+			
+			f *= e;
+			
+			System.out.println(f);
+			
+			
+			// /= División combinada
+			
+			
+			int g = 5;
+			double h = 2;
+			
+			h /= g;
+			
+			System.out.println(h);
+			
+			
+			// %= Módulo combinado
+			
+			
+			int i = 5;
+			int j = 2;
+			
+			j %= i;
+			
+			System.out.println(j);
+			
+		}
+		
+		// Operadores de relación 
+		
+		public static void relationalOperators() {
+			
+			// Igual que (==)
+			
+			boolean igualQue = 5 == 4;
+			System.out.println(igualQue);
+			
+			// Diferente que (!=)
+			
+			boolean distintoQue = 4 != 2;
+			System.out.println(distintoQue);
+			
+			// Menor que (<)
+			
+			boolean menorQue = 5 < 3;
+			System.out.println(menorQue);
+			
+			// Mayor que (>)
+			
+			boolean mayorQue = 5 > -5;
+			System.out.println(mayorQue);
+			
+			// Menor o igual que (<=)
+			
+			boolean menorIgualQue = 2 <= 3;
+			System.out.println(menorIgualQue);
+			
+			// Mayor o igual que (>=)
+			
+			boolean mayorIgualQue = 3 >=9;
+			System.out.println(mayorIgualQue);
+			
+			
+		}
+		
+		@SuppressWarnings("unused")
+		public static void logicalOperators() {
+			// Negación - Unario (!)
+			boolean negacion = !false;
+			System.out.println(negacion);
+	
+			// Suma lógica - Binario (|)
+			boolean sumaLogica = true | false;
+			System.out.println(sumaLogica);
+	
+			// Suma lógica exclusiva (^)
+			boolean sumaLogicaExclusiva = (5 == 4) ^ (5 < 4);
+			System.out.println(sumaLogicaExclusiva);
+	
+			// Producto lógico - Binario (&)
+			boolean productoLogico = (5 == 6) & (5 < 4);
+			System.out.println(productoLogico);
+	
+			// Suma lógica cortocircuito (||)
+			boolean sumaLogicaCortocircuito = true || false;
+			System.out.println(sumaLogicaCortocircuito);
+	
+			// Producto lógico cortocircuito (&&)
+			boolean productoLogicoCortocircuito = (5 == 4) && (5 < 4);
+			System.out.println(productoLogicoCortocircuito);
+		}
+		
+		public static void conditionalOperator() {
+			
+			// Operador condicional (?:)
+			
+			int a = 4;
+			int b = a == 4 ? a + 5 : 6 - a;
+			System.out.println(b);
+			b = a > 4 ? a * 4 : a + 8;
+			System.out.println(b);
+			
+		}
+		
+		
+		public static void concatenationOperator() {
+			
+			// Operador de concatenación (+)
+			
+			String saludo = "Hola" + "Juan";
+			System.out.println(saludo);
+			
+			
+		}
+		
+		
+		public static void separators() {
+			 
+			// Parentesis () - Permite modificar la prioridad de la expresion
+			// contener expresionaes para el control del flujo y realizar 
+			// conversiones de tipo.
+			
+			int suma = (5+9)*2;
+			System.out.println(suma);
+			
+			// Llaves {}
+			// Permite definir bloques de código y ambitos y contener los valores
+			// iniciales de un array
+			
+	
+			// Corchetes []
+			// Permite declarar bloques de array (vectores o matrices) y referenciar
+			// sus elementos. 
+			
+			int arreglo[] = {2, 9};
+			System.out.println(Arrays.toString(arreglo));
+			
+			// Punto y coma ;
+			// Permite separar sentencias
+			
+			// Coma ,
+			// Permite separar identificadores consecutivos en la declaración de variables
+			// y en las listas de parametros. Tambien se emplea para encadenar sentencias
+			// en un ciclo for.
+			
+			// int a, b, c;
+			
+			// Punto .
+			// Permite separar el nombre de un atributo o método de su instancia de referencia.
+			// Tambien separa el identificador de un paquete de los subpaquetes y clases.
+	
+			double euler = Math.E;
+			System.out.println(euler);
+		}
+		
+		
+		public static void mathClass() {
+			
+			// Math
+			
+			double valorPi = Math.PI;
+			System.out.println(valorPi);
+			
+			double raiz = Math.sqrt(25);
+			System.out.println(raiz);
+			
+			
+			// Valor absoluto
+			System.out.println("Valor absoluto = " + Math.abs(-123));
+			
+			// Hipotenusa
+			System.out.println("Hipotenusa = " + Math.hypot(15, 9));
+			
+			// Logaritmo Natural
+			System.out.println("Logaritmo Natural = " + Math.log(4));
+			
+			// Numero mayor
+			System.out.println("Número mayor = " + Math.max(4, 9));
+			
+			// Numero menor
+			System.out.println("Número menor = " + Math.min(4, 9));
+			
+			// Potencia
+			System.out.println("Potencia = " + Math.pow(5, 4));
+			
+			// Numero Aleatorio
+			System.out.println("Número aleatorio = " + Math.random()*100);
+			
+			// Numero Redondeado
+			System.out.println("Número redondeado = " + Math.round(Math.random()*10));
+		
+			// Raiz cuadrada
+			System.out.println("Raiz cuadrada = " + Math.sqrt(121));
+		
+		}
+		
+
+
 	
 	public static void main(String[] args) {
 		Variables variables = new Variables();
 		variables.printVariables();
+		assignmentOperator();
+		arithmeticOperators();
+		basicArithmeticOperators();
+		unaryOperators();
+		compoundAssignmentOperators();
+		relationalOperators();
+		logicalOperators();
+		conditionalOperator();
+		concatenationOperator();
+		separators();
+		mathClass();
+
 	}
+
+
 
 }
