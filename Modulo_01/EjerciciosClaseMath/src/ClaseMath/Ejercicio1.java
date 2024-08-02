@@ -8,10 +8,9 @@ public class Ejercicio1 {
         int Exponente = 3;
 
         double resultado = Math.pow(Base, Exponente);
-		
-		System.out.println("El resultado de " + Base + " elevado a " + Exponente + " es: " + resultado);
 
+        System.out.println("El resultado de " + Base + " elevado a " + Exponente + " es: " + resultado);
 
-}
+    }
 
 }
