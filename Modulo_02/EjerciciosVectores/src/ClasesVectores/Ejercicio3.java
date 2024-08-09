@@ -20,6 +20,14 @@ public class Ejercicio3 {
 
         for (int i = 0; i < caracteres.length; i++) {
             System.out.println("Caracter: " + caracteres[i]);
+            // Caracter: C
+			// Caracter: o
+			// Caracter: l
+			// Caracter: o
+			// Caracter: m
+			// Caracter: b
+			// Caracter: i
+			// Caracter: a
         }
 
     }
