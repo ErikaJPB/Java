@@ -67,6 +67,13 @@ public class Calculadora {
 		Operaciones.setOperador("+");
 		Operaciones.setNumero2(8);
 		System.out.println(Operaciones.operacion());
+
+		System.out.println(Operaciones.sumar());
+		System.out.println(Operaciones.sumar(9.2, 3.7));
+		System.out.println(Operaciones.sumar(9f, 9.5f));
+		System.out.println(Operaciones.sumar(5, 2));
+		System.out.println(Operaciones.sumar(2, 3, 4));
+
 	}
 
 	// getters and setters
@@ -98,14 +105,40 @@ public class Calculadora {
 		return this.getNumero1() + " " + this.getOperador() + " " + this.getNumero2();
 	}
 
-}
+	// public int sumarVector(int numeros[])
+	// {
+	// int suma = 0;
+	// for (int i = 0; i < numeros.length; i++)
+	// {
+	// suma = suma + numeros[i];
+	// }
+	// return suma;
+	// }
 
-// public int sumarVector(int numeros[])
-// {
-// int suma = 0;
-// for (int i = 0; i < numeros.length; i++)
-// {
-// suma = suma + numeros[i];
-// }
-// return suma;
-// }
+	// Sobrecarga de metodos => + de un metodo con el mismo nombre, con la condicion
+	// que no puede haber
+	// dos de ellos con el mismo numero y tipo de parametros
+
+	public int sumar(int numero1, int numero2) {
+		return numero1 + numero2;
+	}
+
+	public double sumar(double numero1, double numero2) {
+		return numero1 + numero2;
+	}
+
+	public float sumar(float numero1, float numero2) {
+		return numero1 + numero2;
+	}
+
+	public int sumar() {
+		return 0;
+	}
+
+	// Se permite el mismo nombre y mismo tipo siempre y cuando el numero de
+	// parametros sea diferente.
+	public int sumar(int numero1, int numero2, int numero3) {
+		return numero1 + numero2 + numero3;
+	}
+
+}
